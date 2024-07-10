@@ -1,0 +1,39 @@
+import random
+
+# Diccionario con las preguntas y respuestas
+preguntas_respuestas = {
+    "¿Cuál es la capital de Francia?": "París",
+    "¿Qué animal es conocido como el 'rey de la selva'?": "León",
+    "¿Cuántos planetas hay en el Sistema Solar?": "8",
+    "¿Quién escribió la novela 'Cien años de soledad'?": "Gabriel García Márquez",
+    "¿Cuál es el río más largo del mundo?": "Nilo"
+}
+
+# Seleccionar un número aleatorio de preguntas a hacer
+num_preguntas = random.randint(3, 5)
+
+# Inicializar la variable para almacenar el puntaje del usuario
+puntaje = 0
+
+# Bucle principal del juego
+for i in range(num_preguntas):
+    # Seleccionar una pregunta aleatoria del diccionario
+    pregunta = random.choice(list(preguntas_respuestas.keys()))
+    
+    # Mostrar la pregunta al usuario
+    print(f"Pregunta {i+1}: {pregunta}")
+    
+    # Pedir al usuario que responda la pregunta
+    respuesta = input("Tu respuesta: ").lower()
+    
+    # Verificar si la respuesta del usuario es correcta
+    if respuesta == preguntas_respuestas[pregunta].lower():
+        print("¡Correcto!")
+        puntaje += 1
+    else:
+        print("Incorrecto.")
+    
+    print()
+
+# Mostrar el puntaje final del usuario
+print(f"Has respondido correctamente a {puntaje} de {num_preguntas} preguntas.")
