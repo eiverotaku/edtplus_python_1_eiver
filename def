@@ -1,0 +1,52 @@
+#funciones en python
+#las funciones son habitantes del primer orden
+# las funciones estan conformadas por parametros y argumentos.
+
+#ejercicio sin funciones
+
+nombre = "eiver"
+nombre2 = "pedro"
+nombre3 = "joel"
+nombre4 = "cesar"
+nombre5 = "arianna"
+
+print(f"hola,{nombre}")
+print(f"hola,{nombre2}")
+print(f"hola,{nombre3}")
+print(f"hola,{nombre4}")
+print(f"hola,{nombre5}")
+print("*"*40)
+
+#palbra reservada (def)identificacion unica 
+def saludo(name: str ):
+    print(f"hola,{name}")
+
+# invocar sa la funcion saludo 
+saludo("eiver")
+saludo("pedro")
+saludo("joel")
+saludo("cesar")
+saludo("arianna")
+
+print ("*"*40)
+
+# funcio sin parametros o argumentos
+
+def funcion_sin_parametros_ni_argumento():
+    print("funcion sin parametros ni argumento")
+
+#invocar o llamar
+
+funcion_sin_parametros_ni_argumento()
+
+def suma (num: int, num2 :int):
+    print(f"primera suma, {num + num2}")
+    
+suma(2, 3)
+suma(3, 3)
+print("*"*40)
+
+def invitados(invitados:str, disfraz:str):
+    print(f"hola , {invitados} vienes de {disfraz}")
+
+invitados("cesar", "batman")
