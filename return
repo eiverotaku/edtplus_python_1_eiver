@@ -1,0 +1,25 @@
+# funciones con return (retornar)solamente se ejecutan una unica vez.
+#la funcion con return no devuelve un valor especifico
+
+# funcion sin return (sin retorno)
+
+def sumar_valores_sin_retornos(a: int, b:int):
+    print(a + b)
+    
+sumar_valores_sin_retornos(1, 6)
+sumar_valores_sin_retornos(98, 34)
+
+resultado_de_la_suma_sin_return = sumar_valores_sin_retornos(2, 3)
+print("mostrar valor obtenido mediante la funcion sin retorno ->", resultado_de_la_suma_sin_return)
+
+print("*"*40)
+
+def sumar_valores_con_return(a: int, b: int):
+    return a + b
+
+# invocando a la funcion con return y asignando el valor a una variable
+resultado_obtenido_en_la_suma = sumar_valores_con_return(2, 3)
+
+print("mostrar valor obtenido mediante la funcion con return->", resultado_obtenido_en_la_suma)
+
+def sumar_valores_con_un_return_input(a: int, b: int): []
